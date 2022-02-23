@@ -1,0 +1,25 @@
+﻿Question: Which should we prefer String and Symbol ? And why?
+Answer:  
+  String	
+	=> Strings is anything that is written between quotation marks, either “” or ‘’;
+	=> Everytime you create a string in ruby, it occupies new memory space.
+		e.g.
+		“Information”.object_id
+		“Information”.object_id
+		output of above both will be different, even though content is same
+	=> String objects are mutable which means there values could be changed later on.
+
+  Symbol:
+	
+	=>A symbol is text that begins with a colon.
+		e.g. 
+		:hello
+		:data
+	=> Symbols are immutable!
+	=> The immutable nature of symbols makes them very valuable in programming
+	=> String objects are mutable which means there values could be changed later on
+	=> Since symbols are immutable, they always refer to the same object and the same place 		   in memory
+
+  Which is better to use:
+	
+	Strings can reduce a program’s performance if string objects are repeatedly created and 	  	destroyed when the same object could have been reused in their place. For this reason, a 		program that uses symbols over strings (when possible) will run more efficiently and 	smoothly.
